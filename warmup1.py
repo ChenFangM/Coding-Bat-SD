@@ -46,3 +46,27 @@ def pos_neg(a, b, negative):
     return a < 0 and b < 0
   else:
     return (a < 0 and b > 0) or (a > 0 and b < 0)
+
+##
+  
+def not_string(str):
+  if str[0:3] != "not":
+    return "not " + str
+  else:
+    return str
+  
+##
+
+def not_string(str):
+  if str[0:3] != "not":
+    return "not " + str
+  else:
+    return str
+  
+##
+
+def front_back(str):
+  if len(str) < 2:
+    return str
+  else: 
+    return str[-1] + str[1:-1] + str[0]
